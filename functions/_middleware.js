@@ -1,7 +1,7 @@
 import { getCookie, verifySession } from "./_lib/auth.js";
 
 const SESSION_COOKIE = "cbo_session";
-const PUBLIC_PATHS = ["/login.html", "/api/login", "/api/logout"];
+const PUBLIC_PATHS = ["/login", "/login.html", "/api/login", "/api/logout"];
 
 export async function onRequest(context) {
   const { request, next, env } = context;
